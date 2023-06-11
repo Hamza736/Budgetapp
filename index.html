@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="hero">
+
+        <div class="first_section">
+
+        <!-- Budget Input Field -->
+        <div class="budget_input">
+            <h1>Budget</h1>
+            <form action="">
+                <label for="Bud_inpt">Enter Total Budget</label>
+            <input id="Bud_inpt" type="number" placeholder="Enter total amount" required>
+            <input type="submit" id="bud_btn" value="Set Budet" onclick="inputBudget()">
+        </form>
+        </div>
+
+
+        <!-- Expense Form -->
+        <div class="form" id="form">
+            
+            <form action="" >
+                <h2>Add Expenses</h2>
+                <div class="form_fild_container">
+                <div class="form_item">
+                <label for="form_cat">Select Category</label>
+                <select name="" id="form_cat" required>
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Education">Education</option>
+                    <option value="Bill">Bill</option>
+                    <option value="other">other</option>
+                </select>
+
+                <label for="form_desc">Description</label>
+                <input type="text" placeholder="Enter Description" id="form_desc" required>
+
+
+            </div>
+            <div class="form_item">
+
+                <label for="form_price">Total Price</label>
+                <input type="number" placeholder="Enter Total Amount" id="form_price" required>
+                
+                <label for="form_date">Date</label>
+                <input type="date" name="" id="form_date" required>
+            </div>
+        </div>
+                <input type="submit" value="Add" id="form_add" onclick="addExpensesBtn()">
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+        <!-- Expense Section -->
+        <div class="expense_container">
+            <div class="exp_heading">
+                <h2>Expense List</h2>
+            </div>
+            <div class="expense_card_container">
+
+                <div id="exp_card">
+            </div>
+
+            </div>
+        </div>
+
+
+        <!-- Budget Section -->
+        <div class="budget_container">
+            <div class="total_bud bud_card">
+                <h2>Total Budget</h2>
+                <p id="total_bud_value">-</p>
+            </div>
+            <div class="expense bud_card">
+                <h2>Expenses</h2>
+                <p id="expense_vale">-</p>
+            </div>
+            <div class="balance bud_card">
+                <h2>Balance</h2>
+                <p id="balance_value">-</p>
+            </div>
+        </div>
+
+    
+
+        
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

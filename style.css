@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first_section{
+    display: flex;
+    margin: 40px 120px;
+    gap: 20px;
+}
+
+.budget_input{
+    background-color: rgb(241, 243, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 120px;
+    gap: 20px;
+    width: 40%;
+    border-radius: 16px;
+    position: relative;
+}
+
+.budget_input form{
+    display: flex;
+    flex-direction: column;
+}
+
+.budget_input h1{
+    color: rgb(140, 0, 255);
+    font-size: 38px;
+}
+
+.budget_input #Bud_inpt{
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 2px solid rgb(140, 0, 255);
+    border-radius: 8px;
+    outline: none;
+    margin: 10px 0 20px 0;
+    background-color: rgb(241, 243, 255);
+}
+
+.budget_input #bud_btn{
+    width: 140px;
+    background-color: rgb(140, 0, 255);
+    border: 2px solid rgb(140, 0, 255);
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 14px 16px;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.budget_input #bud_btn:hover{
+box-shadow: 0px 0px 12px 2px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
+
+.budget_container{
+    display: flex;
+    background-color: rgb(140, 0, 255);
+    justify-content: space-between;
+    margin: 40px 120px;
+    padding: 60px 120px;;
+    border-radius: 16px;
+}
+
+.bud_card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 8px rgba(1, 1, 1, 0.3);
+}
+
+.bud_card h2{
+    color: rgb(140, 0, 255);
+}
+
+.bud_card p{
+    font-size: 24px;
+}
+
+
+.expense_container{
+    background-color: rgb(241, 243, 255);
+    margin: 40px 120px;
+    padding: 60px 120px;;
+    border-radius: 16px;
+}
+
+.exp_heading h2{
+    font-size: 32px;
+    color: rgb(140, 0, 255);
+    margin-bottom: 20px;
+}
+
+.exp_card{
+    margin: 20px 0;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px -2px rgba(1, 1, 1, 0.3);
+}
+
+.exp_cat_date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    flex: 2;
+}
+
+.exp_cat_date h4{
+    font-size: 22px;
+    color: rgb(140, 0, 255);
+}
+
+.exp_cat_date p{
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+}
+
+.exp_desc_btn{
+    flex: 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.exp_desc_btn .card_price{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(140, 0, 255);
+}
+
+.exp_btn input{
+    font-size: 18px;
+    padding: 14px 16px;
+    border: 2px solid rgb(140, 0, 255);
+    border-radius: 8px;
+    color: rgb(140, 0, 255);
+    
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.exp_btn input:hover{
+    box-shadow: 0px 0px 8px 2px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
+
+
+.exp_btn #exp_delete_btn:hover{
+color: red;
+border: 2px solid red;
+}
+
+#add_exp_btn{
+    background-color: rgb(140, 0, 255);
+    border: 2px solid rgb(140, 0, 255);
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form{
+    width: 60%;
+    background-color: rgb(241, 243, 255);
+    border-radius: 12px;
+}
+.form_fild_container{
+    display: flex;
+    justify-content: space-between;
+}
+.form form{
+    border-radius: 16px;
+    padding: 40px;
+    gap: 7px;
+}
+
+.form form .form_item{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 45%;
+}
+
+form h2{
+    font-size: 38px;
+    color: rgb(140, 0, 255);
+    margin: 20px 0;
+}
+
+form label{
+    font-size: 18px;
+}
+
+form input,select{
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 2px solid rgb(140, 0, 255);
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(241, 243, 255);
+}
+
+form #form_add{
+    background-color: rgb(140, 0, 255);
+    color: white;
+    border: 2px solid rgb(153, 0, 255);
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+    margin-top: 20px;
+}
+
+form #form_cancel{
+    background-color: white;
+    color: rgb(140, 0, 255);
+    border: 2px solid rgb(140, 0, 255);
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+}
+
+form #form_cancel:hover , form #form_add:hover{
+    box-shadow: 0px 0px 12px 2px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
